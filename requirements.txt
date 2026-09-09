@@ -1,0 +1,12 @@
+# =============================================================================
+# FitTrack Enterprise & Evolution Showcase — Project Dependencies
+# =============================================================================
+
+# Core Scientific & Data Visualization (for FitTrack Enterprise)
+matplotlib>=3.8.0
+
+# Image Processing & Canvas UI Rendering
+Pillow>=10.0.0
+
+# MySQL Connector (for original vasi.py prototype)
+mysql-connector-python>=8.0.0
