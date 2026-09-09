@@ -11,11 +11,19 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge)](https://github.com/)
 
-[**Explore Showcase Studio**](#-the-evolution-studio) •
-[**FitTrack Cockpit**](#-fittrack-enterprise-v30-orbital) •
+[**Showcase Studio**](#-the-evolution-studio-showcasepy) •
+[**Orbital Cockpit**](#-the-3-wing-biometric-cockpit-architecture) •
 [**Comparison Matrix**](#-architectural--feature-comparison-matrix) •
+[**UI Screenshots**](#-ui-gallery) •
 [**Quick Start**](#-quick-start--installation) •
 [**Keyboard Shortcuts**](#-keyboard-shortcuts)
+
+<br/>
+
+<p align="center">
+  <img src="docs/screenshots/showcase_studio_hero.png" alt="FitTrack Evolution Studio" width="95%" />
+</p>
+<p align="center"><em>FitTrack Evolution Studio (showcase.py): Full-screen side-by-side comparison launcher and multi-app controller</em></p>
 
 ---
 
@@ -25,9 +33,43 @@
 
 **FitTrack** represents a full-spectrum software engineering and UI/UX evolution. This repository houses both ends of the engineering journey along with an interactive **Evolution Studio** that allows side-by-side execution and live comparison:
 
-1. **`vasi.py` (The Classic Prototype)**: The original single-file procedural Python application with Tkinter widgets and local MySQL database connectivity.
+1. **`vasi.py` (The Classic Foundation)**: The original single-file procedural Python application with Tkinter widgets and local MySQL database connectivity.
 2. **`FitTrack Enterprise (v3.0-ORBITAL)`**: A production-grade desktop biometric telemetry console built with clean MVC architecture, self-contained SQLite, 60 FPS animated canvas graphics, holographic bio-avatar, real-time cyber sliders, and embedded Matplotlib analytical charts.
 3. **`showcase.py` (Evolution Studio)**: A full-screen interactive comparison launcher and architectural studio to evaluate, benchmark, and run both systems simultaneously.
+
+---
+
+## 📸 UI Gallery
+
+### 1. FitTrack Orbital Station — Panoramic Telemetry Cockpit
+<p align="center">
+  <img src="docs/screenshots/fittrack_orbital_cockpit.png" alt="FitTrack Orbital Station Cockpit" width="95%" />
+</p>
+<p align="center"><em>Panoramic Cockpit: Bio-Entry Terminal (Left), 60 FPS Orbital BMI Sphere & Holographic Avatar (Center), Constellation Analytics (Right)</em></p>
+
+### 2. Biometric Constellation — Records Matrix & Fleet Telemetry
+<p align="center">
+  <img src="docs/screenshots/fittrack_records_matrix.png" alt="Biometric Constellation Records" width="95%" />
+</p>
+<p align="center"><em>Telemetry Data Matrix: Real-time search filter, sortable columns, instant HUD needle reflection, and fleet statistics dock</em></p>
+
+### 3. Full Architectural & Feature Comparison Matrix (Showcase Studio)
+<p align="center">
+  <img src="docs/screenshots/showcase_comparison_matrix.png" alt="Showcase Studio Comparison Matrix" width="95%" />
+</p>
+<p align="center"><em>Deep 12-Dimension Side-by-Side Comparison Matrix rendered across widescreen displays in Showcase Studio</em></p>
+
+### 4. Aurora Bloom — High-Visibility Medical Light Theme
+<p align="center">
+  <img src="docs/screenshots/fittrack_light_theme.png" alt="Aurora Bloom Light Theme" width="95%" />
+</p>
+<p align="center"><em>Aurora Bloom Light Mode: High-contrast medical sci-fi palette with lavender glass cards and rich violet telemetry accents</em></p>
+
+### 5. Classic Prototype (`vasi.py`) — The Original Foundation
+<p align="center">
+  <img src="docs/screenshots/classic_prototype_vasi.png" alt="Classic Prototype vasi.py" width="85%" />
+</p>
+<p align="center"><em>Classic Prototype (vasi.py): The original procedural Tkinter application with direct MySQL database integration</em></p>
 
 ---
 
@@ -171,7 +213,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> **Note:** Tkinter and SQLite3 are standard library components included with Python. The only external packages installed are `matplotlib`, `Pillow`, and `mysql-connector-python`.
+> **Note:** Tkinter and SQLite3 are standard library components included with Python. The external packages installed are `matplotlib`, `Pillow`, and `mysql-connector-python`.
 
 ---
 
@@ -222,10 +264,19 @@ python vasi.py
 BMI calculator/
 ├── .gitignore                  # Git ignore file (excludes .venv, caches, etc.)
 ├── LICENSE                     # MIT License
-├── README.md                   # Comprehensive repository documentation
+├── README.md                   # Comprehensive repository documentation with UI Gallery
 ├── requirements.txt            # Unified project pip dependencies
 ├── showcase.py                 # Evolution Studio & Dual-App Comparison Launcher
 ├── vasi.py                     # Original Classic Prototype application
+│
+├── docs/                       # Documentation and screenshot assets
+│   └── screenshots/
+│       ├── showcase_studio_hero.png
+│       ├── showcase_comparison_matrix.png
+│       ├── fittrack_orbital_cockpit.png
+│       ├── fittrack_records_matrix.png
+│       ├── classic_prototype_vasi.png
+│       └── fittrack_light_theme.png
 │
 └── FitTrack/                   # FitTrack Enterprise application package
     ├── main.py                 # Entry point with animated Orbital Station splash
