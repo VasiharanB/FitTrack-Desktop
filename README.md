@@ -193,8 +193,8 @@ The repository includes **`showcase.py`**, a dedicated full-screen presentation 
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/vasiharan/BMI-calculator.git
-cd "BMI calculator"
+git clone https://github.com/VasiharanB/FitTrack-Desktop.git
+cd FitTrack-Desktop
 ```
 
 ### 3. Create a Virtual Environment (Recommended)
